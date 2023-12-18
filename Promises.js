@@ -4,9 +4,9 @@ const util = require('util')
 
 const start = async() =>{
     try{
-        const first = await readFilePromise('./content/first.txt','utf-8')
-        const second = await readFilePromise('./content/second.txt','utf-8')
-        await writeFilePromise('./content/make_new.txt','WRITE THIS THERE')
+        const first = await readFile('./content/first.txt','utf-8')
+        const second = await readFile('./content/second.txt','utf-8')
+        await writeFile('./content/make_new.txt','WRITE THIS THERE')
         console.log(first,second)
 
     }
@@ -14,4 +14,4 @@ const start = async() =>{
         console.log(error)
     }
 }
-start()
+start()//Please watch out forgot to call function and it wasnt working
